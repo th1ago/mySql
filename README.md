@@ -4,6 +4,6 @@
 - Utilizando o WampServer
 
 ### Definicoes
-`DDL` - Data Definion Language
-`DML` - Data Manipulation Language
+`DDL` - Data Definion Language (Create)
+`DML` - Data Manipulation Language (Insert)
 `DQL` = Data Query Language
