@@ -1,7 +1,7 @@
 ### SQL
-- CRUD
-- Utilizando banco MySql
-- Utilizando o WampServer
+- CRUD (create, read, update, delete)
+- Utilizando o banco de dados MySql
+- Utilizando o instalador WampServer
 
 ### Definicoes
 - `DDL` Data Definion Language (Create, Alter, Drop)
