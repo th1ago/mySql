@@ -18,3 +18,15 @@ CREATE TABLE pessoas (
     nacionalidade varchar(20) DEFAULT 'Brasil',
     PRIMARY KEY(id)
 ) DEFAULT CHARSET = utf8
+
+
+-- IF NOT EXISTS or IF EXISTS verifica se a tabela existe
+CREATE TABLE IF NOT EXISTS cursos (
+    -- UNIQUE na permite cadastro 2 cursos com o mesmo nome
+    nome varchar(30) NOT NULL UNIQUE,
+    descricao text,
+    -- UNSIGNED sem sinal
+    carga int UNSIGNED,
+    totaulas int,
+    ano year DEFAULT '2023'
+) DEFAULT CHARSET = utf8

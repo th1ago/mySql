@@ -1,3 +1,6 @@
+/*  
+Tabela Pessoas
+*/
 -- describe
 desc pessoas;
 
@@ -20,3 +23,12 @@ CHANGE COLUMN profissao prof varchar(20);
 -- renomeando tabela
 ALTER TABLE pessoas
 RENAME TO galera_do_mal;
+
+/*  
+Tabela Curso
+*/
+ALTER TABLE cursos
+ADD COLUMN idcurso int FIRST;
+
+ALTER TABLE cursos
+ADD PRIMARY KEY(idcurso);
