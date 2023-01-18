@@ -6,8 +6,9 @@
 ### Definicoes
 - `DDL` Data Definion Language (Create, Alter, Drop)
 - `DML` Data Manipulation Language (Insert, Update, Delete, Truncate)
-- `DQL` Data Query Language
+- `DQL` Data Query Language (select)
 
+### Operadores logicos
 - So sera verdadeiro se as 2 primeiras forem
 
 |   p   |   q   |   p AND q   |
