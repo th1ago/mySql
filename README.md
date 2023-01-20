@@ -4,9 +4,11 @@
 - Utilizando o instalador WampServer
 
 ### Definicoes
-- `DDL` Data Definion Language (Create, Alter, Drop)
+- `DDL` Data Definion Language (Create, Alter, Drop, Rename)
 - `DML` Data Manipulation Language (Insert, Update, Delete, Truncate)
 - `DQL` Data Query Language (select)
+- `DCL` Data Control Language (Grant, Revoke)
+- `TCL` Transaction Control Language (Commit, Rollback, Save Point)
 
 ### Modelo Relacional
 - `DER` Entidade e Relacionamento

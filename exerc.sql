@@ -60,7 +60,7 @@ e o total de pessoas nascidas la. So nos interessam os paises que tiverem mais d
 select nacionalidade, count(*) from gafanhotos
 where nacionalidade != 'Brasil'
 group by nacionalidade
-having count(nome) > 3;
+having count(group by nacionalidade) > 3;
 
 /*Uma lista agrupada pela altura dos gafanhotos, mostrando quantas pessoas pesam mais
 de 10kg e que estao acima da media de altura de todos os cadastrados*/
