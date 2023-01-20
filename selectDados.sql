@@ -37,3 +37,9 @@ select sum(totalaulas) from cursos;
 
 -- AVG tirar a media
 select avg(totalaulas) from cursos;
+
+-- GROUP BY | HAVING so pode usar o campo que o GROUP BY utilizou
+select ano, count(*) from cursos
+group by ano
+having count(ano) >= 5
+order by count(*) desc;
