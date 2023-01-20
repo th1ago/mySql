@@ -64,3 +64,7 @@ having count(group by nacionalidade) > 3;
 
 /*Uma lista agrupada pela altura dos gafanhotos, mostrando quantas pessoas pesam mais
 de 10kg e que estao acima da media de altura de todos os cadastrados*/
+select altura, peso, count(*) from gafanhotos
+where peso > 100
+group by altura
+having altura > (select avg(altura) from gafanhotos);
