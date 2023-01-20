@@ -44,3 +44,14 @@ nascimento between '1990-01-01' and '2000-01-31';
 select count(*) from gafanhotos
 where sexo = 'F' and
 altura > '1.9';
+
+/*Uma lista com as profissoes dos gafanhotos e seus respectivos quantitativos*/
+
+/*Quantos gafanhotos homens e quantas mulheres nasceram apos 0/Jan/2015*/
+
+/*Uma lista com os gafanhotos que nasceram fora do Brasil, mostrando o pais de origem
+e o total de pessoas nascidas la. So nos interessam os paises que tiverem mais de 
+3 gafanhotos com essa nacionalidade*/
+
+/*Uma lista agrupada pela altura dos gafanhotos, mostrando quantas pessoas pesam mais
+de 10kg e que estao acima da media de altura de todos os cadastrados*/
