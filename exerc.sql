@@ -18,14 +18,29 @@ where sexo ='F' and nome like 'J%';
 
 /*Uma lista com o nome e nacionalidade de todos os homens que tem Silva no nome, nao nasceram 
 no Brasil e pesam menos de 100Kg?*/
+select nome, nacionalidade
+from gafanhotos
+where sexo = 'M' and
+nacionalidade != 'Brasil' and
+nome like '%Silva%' and 
+peso < '100';
 
 /*Qual a maior altura entre gafanhotos homens que moram no Brasil?*/
-select max(altura) from gafanhotos;
+select max(altura) from gafanhotos
+where sexo = 'M' and
+nacionalidade = 'Brasil';
 
 /*Qual a media de peso dos gafanhotos cadastrados?*/
 select avg(peso) from gafanhotos;
 
 /*Qual o menor pesoa entre as gafanhotos mulheres que nasceram fora do Brasil
  e entre 1/jan/1990 e 31/dez/2000?*/
+ select min(altura) from gafanhotos
+where sexo = 'F' and
+nacionalidade != 'Brasil' and
+nascimento between '1990-01-01' and '2000-01-31';
 
 /*Quantas gafanhotos mulheres tem mais de 1.90m de altura?*/
+select count(*) from gafanhotos
+where sexo = 'F' and
+altura > '1.9';
