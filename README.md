@@ -10,9 +10,9 @@
 
 ### Modelo Relacional
 - `DER` Entidade e Relacionamento
-- `n/n` n para n
-- `1/1` 1 para 1 
-- `1/n` 1 para n
+- `n/n` n para n 
+- `1/1` 1 para 1 > pega a PK da NAO dominante e joga para dominante como FK
+- `1/n` 1 para n > pega a PK do 1 e joga para N como FK
 
 ### Operadores logicos
 - So sera verdadeiro se as 2 primeiras forem
