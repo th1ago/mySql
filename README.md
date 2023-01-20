@@ -8,6 +8,12 @@
 - `DML` Data Manipulation Language (Insert, Update, Delete, Truncate)
 - `DQL` Data Query Language (select)
 
+### Modelo Relacional
+- `DER` Entidade e Relacionamento
+- `n/n` n para n
+- `1/1` 1 para 1 
+- `1/n` 1 para n
+
 ### Operadores logicos
 - So sera verdadeiro se as 2 primeiras forem
 
