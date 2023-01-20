@@ -46,12 +46,21 @@ where sexo = 'F' and
 altura > '1.9';
 
 /*Uma lista com as profissoes dos gafanhotos e seus respectivos quantitativos*/
+select profissao, count(*) from gafanhotos
+group by profissao;
 
-/*Quantos gafanhotos homens e quantas mulheres nasceram apos 0/Jan/2015*/
+/*Quantos gafanhotos homens e quantas mulheres nasceram apos 0/Jan/2005*/
+select sexo, count(*) from gafanhotos
+where nascimento > 2005-01-01
+group by sexo;
 
 /*Uma lista com os gafanhotos que nasceram fora do Brasil, mostrando o pais de origem
 e o total de pessoas nascidas la. So nos interessam os paises que tiverem mais de 
 3 gafanhotos com essa nacionalidade*/
+select nacionalidade, count(*) from gafanhotos
+where nacionalidade != 'Brasil'
+group by nacionalidade
+having count(nome) > 3;
 
 /*Uma lista agrupada pela altura dos gafanhotos, mostrando quantas pessoas pesam mais
 de 10kg e que estao acima da media de altura de todos os cadastrados*/
