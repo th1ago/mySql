@@ -28,12 +28,3 @@ ADD COLUMN idcurso int FIRST;
 
 ALTER TABLE cursos
 ADD PRIMARY KEY(idcurso);
-
-
--- FK foreign key
-ALTER TABle gafanhotos;
-ADD cursopreferido int;
-
-ALTER TABLE gafanhotos
-ADD FOREIGN KEY (cursopreferido)
-REFERENCES cursos(idcurso)
