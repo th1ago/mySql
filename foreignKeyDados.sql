@@ -22,3 +22,10 @@ ADD cursopreferido int;
 ALTER TABLE gafanhotos
 ADD FOREIGN KEY (cursopreferido)
 REFERENCES cursos(idcurso)
+
+-- juntando as tabelas
+SELECT g.nome, c.nome from gafanhotos as g
+join gafanhotos_assiste_curso as a
+on g.id = a.idgafanhoto
+join cursos as c
+on c.idcurso = a.idcurso;
