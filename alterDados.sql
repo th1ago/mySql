@@ -1,6 +1,4 @@
-/*  
-Tabela gafanhotos
-*/
+/* Tabela gafanhotos */
 -- describe
 desc gafanhotos;
 
@@ -24,9 +22,7 @@ CHANGE COLUMN profissao prof varchar(20);
 ALTER TABLE gafanhotos
 RENAME TO galera_do_mal;
 
-/*  
-Tabela Curso
-*/
+/* Tabela Curso */
 ALTER TABLE cursos
 ADD COLUMN idcurso int FIRST;
 
