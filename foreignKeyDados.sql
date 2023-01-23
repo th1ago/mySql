@@ -6,11 +6,17 @@ CREATE TABLE gafanhotos_assiste_curso(
     idcurso int,
     primary key  (id),
     foreign key (idgafanhoto) REFERENCES gafanhotos(id),
-    foreign key (idcuso) REFERENCES cursos(idcurso)
+    foreign key (idcurso) REFERENCES cursos(idcurso)
 ) default charset = utf8;
 
+-- inserindo dados na tabela
+INSERT INTO gafanhotos_assiste_curso 
+(id, data, idgafanhoto, idcurso)
+VALUES
+(default, '2014-03-01', '1', '2')
+
 -- alterando tabela add FK
-ALTER TABle gafanhotos;
+ALTER TABLE gafanhotos;
 ADD cursopreferido int;
 
 ALTER TABLE gafanhotos
