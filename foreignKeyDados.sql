@@ -6,8 +6,8 @@ CREATE TABLE gafanhotos_assiste_curso(
     idcurso int,
     primary key  (id),
     foreign key (idgafanhoto) REFERENCES gafanhotos(id),
-    foreign key (idcuso) REFERENCES cursos(idcurso),
-)
+    foreign key (idcuso) REFERENCES cursos(idcurso)
+) default charset = utf8;
 
 -- alterando tabela add FK
 ALTER TABle gafanhotos;
