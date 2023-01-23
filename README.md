@@ -16,6 +16,16 @@
 - `1/1` 1 para 1 > pega a PK da NAO dominante e joga para dominante como FK
 - `1/n` 1 para n > pega a PK do 1 e joga para N como FK
 
+### Engine
+- `MyISAM`
+- `InnoDB`
+- `XtraDB`
+
+### Transacao
+- Tudo que voce pode pedir ao banco de dados e ele executar e te dar uma reposta
+- `ACID` significa Atomicity, Consistency, Isolation, Durability
+
+
 ### Operadores logicos
 - So sera verdadeiro se as 2 primeiras forem
 
