@@ -1,4 +1,4 @@
-/* Altera as linhas existentes e mantem as mesmas */
+-- Altera as linhas existentes e mantem as mesmas
 UPDATE cursos
 SET nome = 'HTML'
 WHERE idcurso = '1';
@@ -13,3 +13,8 @@ UPDATE cursos
 SET nome = 'JAVA', carga = '40', ano = '2018'
 WHERE idcurso = '4'
 LIMIT 1;
+
+-- Inserindo dados
+UPDATE gafanhotos
+SET cursopreferido = '6'
+WHERE id = '1'
