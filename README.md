@@ -29,19 +29,19 @@
 ### Operadores logicos
 - So sera verdadeiro se as 2 primeiras forem
 
-|   p   |   q   |   p AND q   |
-| :--:  | :--:  |     :--:    |
-|   V   |   V   |      V      |
-|   V   |   F   |      F      |
-|   F   |   V   |      F      |
-|   F   |   F   |      F      |
+|  p   |  q   |   p AND q   |
+| :--: | :--: |    :---:    |
+|  V   |  V   |      V      |
+|  V   |  F   |      F      |
+|  F   |  V   |      F      |
+|  F   |  F   |      F      |
 
 
 - Bastando somente uma seka verdadeiro o resto sera verdadeiro
 
-|   p   |   q   |   p OR q    |
-| :--:  | :--:  |     :--:    |
-|   V   |   V   |      V      |
-|   V   |   F   |      V      |
-|   F   |   V   |      V      |
-|   F   |   F   |      F      |
+|  p   |  q   |   p OR q   |
+| :--: | :--: |    :---:   |
+|  V   |  V   |      V     |
+|  V   |  F   |      V     |
+|  F   |  V   |      V     |
+|  F   |  F   |      F     |
